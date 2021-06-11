@@ -1,0 +1,38 @@
+Install Gcloud utils
+- make sure you have python3
+- wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-344.0.0-linux-x86_64.tar.gz
+- tar -xvzf google-cloud-sdk-344.0.0-linux-x86_64.tar.gz
+
+- cd google-cloud-sdk; ./install.sh
+ press no for feedback.
+
+ It will ask for the profile $path,by default its ~<user>/.bashrc
+
+# To enabled the gcloud command
+source ~/.bashrc 
+
+#gcloud init --skip-diagnostics
+
+This will present a URL , chrome this URL this will return a code copy it and paste in the terminal
+
+#Select the projects by number index number
+
+#Select the Regions by number index 
+
+
+>>Final notifications after correct installation
+Your project default Compute Engine zone has been set to [us-central1-a].
+You can change it by running [gcloud config set compute/zone NAME].
+
+Your project default Compute Engine region has been set to [us-central1].
+You can change it by running [gcloud config set compute/region NAME].
+
+
+Created a default .boto configuration file at [/root/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+Your Google Cloud SDK is configured and ready to use
+
+
+##To change the regions
+gcloud config set compute/zone NAME
